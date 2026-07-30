@@ -88,4 +88,8 @@ Upcoming modules:
 
 **Elif Yıldırım**
 
+<<<<<<< HEAD
 Software Engineer | Java Backend Developer | AI Enthusiast
+=======
+Software Engineer | Java Backend Developer | AI Enthusiast
+>>>>>>> 4342823 (Readme.md added)
