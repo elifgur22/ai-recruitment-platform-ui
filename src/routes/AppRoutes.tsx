@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import DashboardPage from "../pages/DashboardPage";
 import LoginPage from "../pages/LoginPage";
 
+import JobOpeningsPage from "../pages/JobOpeningsPage";
+
 function AppRoutes() {
   return (
     <Routes>
@@ -9,6 +11,7 @@ function AppRoutes() {
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route path="/" element={<Navigate to="/login" replace />} />
       <Route path="*" element={<Navigate to="/login" replace />} />
+      <Route path="/jobs" element={<JobOpeningsPage />} />
     </Routes>
   );
 }

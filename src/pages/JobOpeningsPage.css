@@ -1,0 +1,200 @@
+.jobs-page {
+          min-height: 100vh;
+          padding: 40px;
+          background: #f5f7fb;
+          color: #172033;
+        }
+        
+        .jobs-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 24px;
+          margin-bottom: 32px;
+        }
+        
+        .jobs-header h1 {
+          margin: 4px 0 8px;
+          font-size: 34px;
+        }
+        
+        .jobs-header p {
+          margin: 0;
+          color: #687086;
+        }
+        
+        .jobs-eyebrow {
+          font-size: 13px;
+          font-weight: 700;
+          color: #6d5dfc !important;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        
+        .create-job-button {
+          border: none;
+          border-radius: 12px;
+          padding: 13px 20px;
+          background: linear-gradient(135deg, #6d5dfc, #8b5cf6);
+          color: white;
+          font-weight: 700;
+          cursor: pointer;
+        }
+        
+        .jobs-toolbar {
+          display: flex;
+          gap: 16px;
+          margin-bottom: 28px;
+        }
+        
+        .jobs-toolbar input,
+        .jobs-toolbar select {
+          border: 1px solid #dde2ec;
+          border-radius: 12px;
+          padding: 13px 16px;
+          background: white;
+          font-size: 14px;
+          outline: none;
+        }
+        
+        .jobs-toolbar input {
+          flex: 1;
+        }
+        
+        .jobs-toolbar input:focus,
+        .jobs-toolbar select:focus {
+          border-color: #7667f5;
+        }
+        
+        .jobs-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 20px;
+        }
+        
+        .job-card {
+          padding: 24px;
+          border: 1px solid #e4e8f0;
+          border-radius: 18px;
+          background: white;
+          box-shadow: 0 10px 30px rgba(30, 41, 59, 0.05);
+        }
+        
+        .job-card-top {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 16px;
+        }
+        
+        .job-card h2 {
+          margin: 0 0 6px;
+          font-size: 20px;
+        }
+        
+        .job-card p {
+          margin: 0;
+          color: #72798c;
+        }
+        
+        .job-status {
+          padding: 6px 10px;
+          border-radius: 999px;
+          font-size: 12px;
+          font-weight: 700;
+        }
+        
+        .job-status.active {
+          background: #dcfce7;
+          color: #15803d;
+        }
+        
+        .job-status.draft {
+          background: #fef3c7;
+          color: #a16207;
+        }
+        
+        .job-status.closed {
+          background: #fee2e2;
+          color: #b91c1c;
+        }
+        
+        .job-meta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin: 22px 0;
+        }
+        
+        .job-meta span {
+          padding: 7px 10px;
+          border-radius: 8px;
+          background: #f2f4f8;
+          color: #596174;
+          font-size: 13px;
+        }
+        
+        .match-label {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+          font-size: 13px;
+        }
+        
+        .match-bar {
+          height: 8px;
+          overflow: hidden;
+          border-radius: 999px;
+          background: #e7e9f1;
+        }
+        
+        .match-bar div {
+          height: 100%;
+          border-radius: inherit;
+          background: linear-gradient(90deg, #6d5dfc, #a855f7);
+        }
+        
+        .job-card-actions {
+          display: flex;
+          gap: 10px;
+          margin-top: 24px;
+        }
+        
+        .job-card-actions button {
+          border: none;
+          border-radius: 10px;
+          padding: 11px 14px;
+          background: #172033;
+          color: white;
+          cursor: pointer;
+        }
+        
+        .job-card-actions .secondary-button {
+          border: 1px solid #dce1ea;
+          background: white;
+          color: #172033;
+        }
+        
+        .empty-jobs {
+          margin-top: 40px;
+          padding: 40px;
+          text-align: center;
+          border-radius: 18px;
+          background: white;
+        }
+        
+        @media (max-width: 800px) {
+          .jobs-page {
+            padding: 24px;
+          }
+        
+          .jobs-header,
+          .jobs-toolbar {
+            flex-direction: column;
+            align-items: stretch;
+          }
+        
+          .jobs-grid {
+            grid-template-columns: 1fr;
+          }
+        }

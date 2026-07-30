@@ -5,6 +5,7 @@ import "./DashboardPage.css";
 type NavigationItem = {
   label: string;
   icon: string;
+  path?: string;
 };
 
 type CandidateMatch = {
@@ -15,8 +16,8 @@ type CandidateMatch = {
 };
 
 const navigationItems: NavigationItem[] = [
-  { label: "Dashboard", icon: "⌂" },
-  { label: "Job Openings", icon: "◫" },
+  { label: "Dashboard", icon: "⌂", path: "/dashboard" },
+  { label: "Job Openings", icon: "◫", path: "/jobs" },
   { label: "Candidates", icon: "◎" },
   { label: "Applications", icon: "◇" },
   { label: "Interviews", icon: "◷" },
@@ -64,9 +65,13 @@ function DashboardPage() {
     }).format(new Date());
   }, []);
 
-  const handleNavigation = (label: string) => {
-    setActiveItem(label);
+  const handleNavigation = (item: NavigationItem) => {
+    setActiveItem(item.label);
     setIsSidebarOpen(false);
+
+    if (item.path) {
+      navigate(item.path);
+    }
   };
 
   const handleLogout = () => {
@@ -99,7 +104,7 @@ function DashboardPage() {
                 activeItem === item.label ? "navigation-item-active" : ""
               }`}
               type="button"
-              onClick={() => handleNavigation(item.label)}
+              onClick={() => handleNavigation(item)}
             >
               <span className="navigation-icon">{item.icon}</span>
               <span>{item.label}</span>
@@ -189,7 +194,11 @@ function DashboardPage() {
               <span />
             </button>
 
-            <button className="primary-action" type="button">
+            <button
+              className="primary-action"
+              type="button"
+              onClick={() => navigate("/jobs")}
+            >
               <span>＋</span>
               Create job
             </button>
