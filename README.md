@@ -1,32 +1,91 @@
-# React + TypeScript + Vite
+# 🤖 AI Recruitment Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An AI-powered recruitment platform that helps recruiters manage job openings, track candidates, and make smarter hiring decisions through an intuitive dashboard.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Modern authentication interface
+- Recruitment dashboard
+- Job openings management
+- Candidate tracking
+- AI candidate match score
+- Recruitment analytics
+- Responsive UI
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the Oxlint configuration
+- React 19
+- TypeScript
+- Vite
+- React Router
+- CSS3
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Backend *(In Progress)*
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- Java 21
+- Spring Boot
+- Spring Security
+- PostgreSQL
+- JPA / Hibernate
+- JWT Authentication
+
+### AI *(Planned)*
+
+- Resume parsing
+- Candidate ranking
+- AI-powered job matching
+- Skill extraction
+- Interview recommendation
+
+---
+
+## 📷 Screenshots
+
+### Login
+
+![Login](src/png/Home.png)
+
+### Dashboard
+
+![Dashboard](src/png/Dashboard.png)
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/elifgur22/ai-recruitment-platform-ui.git
+
+cd ai-recruitment-platform-ui
+
+npm install
+
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 📌 Project Status
+
+This project is currently under active development.
+
+Upcoming modules:
+
+- Job Openings
+- Candidate Management
+- Resume Upload
+- AI Matching Engine
+- Interview Management
+- Analytics Dashboard
+- Spring Boot REST API
+- PostgreSQL Integration
+
+---
+
+## 👩‍💻 Author
+
+**Elif Yıldırım**
+
+Software Engineer | Java Backend Developer | AI Enthusiast
